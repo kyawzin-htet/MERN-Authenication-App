@@ -1,8 +1,8 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { getUsername } from "../helper/helper";
-axios.defaults.baseURL = 'http://localhost:8000'
-
+// axios.defaults.baseURL = 'http://localhost:8000'
+axios.defaults.baseURL = 'https://mern-authenication-app-one.vercel.app'
 
 export default function useFetch(query){
     const [getData, setData] = useState({ isLoading: false, apiData: undefined, status: null, serverError: null});
