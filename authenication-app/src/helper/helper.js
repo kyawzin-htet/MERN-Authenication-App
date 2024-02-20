@@ -1,7 +1,8 @@
 import axios from 'axios';
 import jwt_decode from 'jwt-decode';
 
-axios.defaults.baseURL = 'http://localhost:8000'
+// axios.defaults.baseURL = 'http://localhost:8000'
+axios.defaults.baseURL = 'https://mern-authenication-app-one.vercel.app'
 // make api request
 
 
