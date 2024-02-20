@@ -2,14 +2,14 @@
     "version": 2,
     "builds": [
       {
-        "src": "db/conn.js", 
+        "src": "index.js", 
         "use": "@vercel/node"
       }
     ],
     "routes": [
       {
         "src": "/(.*)",
-        "dest": "db/conn.js"
+        "dest": "index.js"
       }
     ]
   }
