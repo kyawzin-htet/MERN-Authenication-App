@@ -14,7 +14,7 @@ router.route('/authenticate').post(controllers.verifyUser, (req, res) => res.end
 router.route('/login').post(controllers.verifyUser, controllers.login)
 
 //get
-router.route('/user/:username').get(controllers.getUser);
+router.route('user/:username').get(controllers.getUser);
 
 router.route('/generateOTP').get( controllers.verifyUser, auth.localVariables, controllers.generateOTP);
 
