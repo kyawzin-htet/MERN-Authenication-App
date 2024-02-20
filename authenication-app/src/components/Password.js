@@ -13,7 +13,7 @@ import { verifyPassword } from "../helper/helper";
 const Password = () => {
 
   const {username} = useAuthStore(state => state.auth)
-  const [{ isLoading, apiData, serverError}] = useFetch(`/user/${username}`)
+  const [{ isLoading, apiData, serverError}] = useFetch(`user/${username}`)
   const navigate = useNavigate();
 
   const formik = useFormik({
